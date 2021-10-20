@@ -2567,8 +2567,6 @@ export class TreeItem extends FoundationElement {
     focusable: boolean;
     static focusItem(el: HTMLElement): void;
     // (undocumented)
-    handleClick: (e: MouseEvent) => void | boolean;
-    // (undocumented)
     handleExpandCollapseButtonClick: (e: MouseEvent) => void;
     // (undocumented)
     readonly isNestedItem: () => boolean;
@@ -2603,6 +2601,8 @@ export class TreeView extends FoundationElement {
     currentSelected: HTMLElement | TreeItem | null;
     // (undocumented)
     handleBlur: (e: FocusEvent) => void;
+    // (undocumented)
+    handleClick(e: Event): boolean;
     // (undocumented)
     handleFocus: (e: FocusEvent) => void;
     // (undocumented)
